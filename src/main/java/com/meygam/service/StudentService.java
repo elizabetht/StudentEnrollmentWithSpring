@@ -1,6 +1,6 @@
-package com.meygham.service;
+package com.meygam.service;
 
-import com.meygham.model.Student;
+import com.meygam.model.Student;
 
 public interface StudentService {
 	Student save(Student student);

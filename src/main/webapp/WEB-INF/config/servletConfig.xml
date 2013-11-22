@@ -9,7 +9,7 @@
 
 <mvc:annotation-driven />
 
-<context:component-scan base-package="com.meygham.controller" />
+<context:component-scan base-package="com.meygam" />
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/jsp/" />

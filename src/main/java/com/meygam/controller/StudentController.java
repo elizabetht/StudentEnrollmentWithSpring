@@ -1,4 +1,4 @@
-package com.meygham.controller;
+package com.meygam.controller;
 
 import javax.validation.Valid;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.meygham.model.Student;
-import com.meygham.model.StudentLogin;
-import com.meygham.service.StudentService;
+import com.meygam.model.Student;
+import com.meygam.model.StudentLogin;
+import com.meygam.service.StudentService;
 
 @Controller
 @SessionAttributes("student")
@@ -30,7 +30,7 @@ public class StudentController {
 	}
 	
 	@RequestMapping(value="/signup", method=RequestMethod.POST)
-	public String signup(@Valid @ModelAttribute("student") Student student, BindingResult result, Model model) {
+	public String signup(@Valid @ModelAttribute("student") Student student, BindingResult result, Model model) {		
 		if(result.hasErrors()) {
 			return "signup";
 		} else if(studentService.findByUserName(student.getUserName())) {

@@ -12,7 +12,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.meygham" />
 	
-	<jpa:repositories base-package="com.meygham.repository" />
+	<jpa:repositories base-package="com.meygam.repository" />
 	
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 
