@@ -1,11 +1,11 @@
-package com.meygam.service;
+package com.github.elizabetht.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.meygam.model.Student;
-import com.meygam.repository.StudentRepository;
+import com.github.elizabetht.model.Student;
+import com.github.elizabetht.repository.StudentRepository;
 
 @Service("studentService")
 public class StudentServiceImpl implements StudentService {

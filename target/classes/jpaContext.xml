@@ -11,7 +11,7 @@
 
 	<context:annotation-config />
 	
-	<jpa:repositories base-package="com.meygam.repository" />
+	<jpa:repositories base-package="com.github.elizabetht.repository" />
 	
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 

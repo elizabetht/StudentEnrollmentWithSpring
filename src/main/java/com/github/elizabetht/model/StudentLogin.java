@@ -1,4 +1,4 @@
-package com.meygam.model;
+package com.github.elizabetht.model;
 
 import javax.validation.constraints.Size;
 

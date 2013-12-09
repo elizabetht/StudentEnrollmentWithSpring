@@ -1,12 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.meygam</groupId>
+  <groupId>com.github.elizabetht</groupId>
   <artifactId>StudentEnrollmentWithSpring</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>StudentEnrollmentWithSpring Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -72,7 +77,62 @@
     	</exclusions>
     </dependency>
   </dependencies>
+  <scm>
+		<connection>scm:git:git@github.com:elizabetht/StudentEnrollmentWithSpring.git</connection>
+		<developerConnection>scm:git:git@github.com:elizabetht/StudentEnrollmentWithSpring.git</developerConnection>
+		<url>git@github.com:elizabetht/StudentEnrollmentWithSpring.git</url>
+	</scm>
+	<developers>
+		<developer>
+			<id>email2eliza@gmail.com</id>
+			<name>Elizabeth Thomas</name>
+			<email>email2eliza@gmail.com</email>
+		</developer>
+	</developers>
   <build>
     <finalName>StudentEnrollmentWithSpring</finalName>
+    <pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-enforcer-plugin</artifactId>
+										<versionRange>[1.0.0,)</versionRange>
+										<goals>
+											<goal>enforce</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
   </build>
 </project>
