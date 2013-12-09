@@ -3,7 +3,7 @@
   <groupId>com.github.elizabetht</groupId>
   <artifactId>StudentEnrollmentWithSpring</artifactId>
   <packaging>war</packaging>
-  <version>0.0.2</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>StudentEnrollmentWithSpring Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <parent>
