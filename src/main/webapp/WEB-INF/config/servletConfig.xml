@@ -9,7 +9,7 @@
 
 <mvc:annotation-driven />
 
-<context:component-scan base-package="com.meygam" />
+<context:component-scan base-package="com.github.elizabetht" />
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/jsp/" />
